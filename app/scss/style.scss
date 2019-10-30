@@ -203,8 +203,29 @@
     margin: -86px 80px 0 0;
 }
 
+.surf-slider {
+    padding-top: 110px;
+    .slider-arrows {
+        top: 50px;
+        opacity: 0.25;
+    }
+}
 
+.surf-box {
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 750px;
+}
 
+.surf-box__inner {
+    min-height: 750px;
+    background: rgba(#1C2121, 0.85);
+    position: relative;
+}
+
+.surf-box__inner-title {
+    
+}
 
 
 
