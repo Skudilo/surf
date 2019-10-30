@@ -1,12 +1,31 @@
+html {
+    box-sizing: border-box
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    background-color: #171919;
+    color: #fff;
+    text-transform: uppercase
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
+    color: #fff;
 }
 
 ul,
@@ -16,7 +35,7 @@ li {
     list-style: none;
 }
 
-.suptitle-left {
+.headline-left {
     font-size: 22px;
     line-height: 32px;
     text-align: right;
@@ -40,4 +59,45 @@ li {
         top: 50%;
         background-color: #fff;
     }
+}
+
+.title {
+    span {
+        margin: -50px;
+        font-weight: 800;
+        font-size: 200px;
+        color: rgba(#fff, 0.02);
+        position: relative;
+    }
+    h3 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        color: #fff;
+        font-size: 80px;
+        z-index: 4;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 1px;
+            background-color: $green;
+        }
+    }
+}
+
+.subtitle {
+    display: inline-block;
+    text-align: right;
+    &__head {
+        font-weight: 800;
+        font-size: 40px;
+        padding-right: 10px;
+        span {
+            font-weight: 100;
+        }
+ }
 }
